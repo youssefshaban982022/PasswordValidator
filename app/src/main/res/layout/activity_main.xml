@@ -38,6 +38,8 @@
         app:passwordToggleEnabled="true">
 
         <EditText
+            android:inputType="textPassword"
+            android:maxLines="1"
             android:id="@+id/pass_et"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

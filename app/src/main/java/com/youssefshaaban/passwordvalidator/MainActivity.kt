@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
         val passET: EditText = findViewById(R.id.pass_et)
 
         btn.setOnClickListener {
-            val password = passET.text.toString()
+            val password = passET.text.toString().trim()
             container.error = null
             if (password.isBlank()) {
                 container.error = "Required!"
