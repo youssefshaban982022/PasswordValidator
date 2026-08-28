@@ -24,7 +24,7 @@
         android:textStyle="bold" />
 
     <com.google.android.material.textfield.TextInputLayout
-        id="@+id/pass_container_til"
+        android:id="@+id/pass_container_til"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="32dp"
@@ -55,7 +55,7 @@
         android:textSize="16sp" />
 
     <com.google.android.material.button.MaterialButton
-        id="@+id/check_btn"
+        android:id="@+id/check_btn"
         android:layout_width="wrap_content"
         android:layout_height="80dp"
         android:layout_gravity="center_horizontal"
