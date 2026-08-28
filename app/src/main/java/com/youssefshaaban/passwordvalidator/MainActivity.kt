@@ -39,10 +39,19 @@ class MainActivity : AppCompatActivity() {
             } else {
                 val count = validatePassword(text = password)
                 when (count) {
-                    1 -> strengthIV.setImageResource(R.drawable.weak_password)
-                    2 -> strengthIV.setImageResource(R.drawable.medium_password)
-                    3 -> strengthIV.setImageResource(R.drawable.strong_password)
-
+                    1 -> {
+                        strengthIV.setImageResource(R.drawable.weak_password)
+                        container.boxStrokeColor = android.graphics.Color.RED
+                        container.setBoxBackgroundMode(TextInputLayout.BOX_BACKGROUND_OUTLINE)
+                        }
+                    2 -> {
+                        strengthIV.setImageResource(R.drawable.medium_password)
+                        container.boxStrokeColor = android.graphics.Color.parseColor("#FFA500") // برتقالي أو لون الصورة
+                    }
+                    3 -> {
+                        strengthIV.setImageResource(R.drawable.strong_password)
+                        container.boxStrokeColor = android.graphics.Color.GREEN
+                    }
                 }
 
 
